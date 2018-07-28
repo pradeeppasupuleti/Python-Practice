@@ -1,0 +1,295 @@
+nus721 $
+nus721 $ ./ServerHealthCheck.sh
+ ******************************************************************************
+*                                                                              *
+*                          Server health check script                          *
+*                                                                              *
+ ******************************************************************************
+
+This script runs series of tests on server & gives an idea about server health.
+
+This script uses lots of commands to check stats, please be patient while output returns
+
+Workspace for this script is /tmp/temp6768/quickservchk.sh.log
+
+--------------------------------------------------------------------------------------------------------------
+
+======================================================
+
+
+[*]Checking if OS is Sun Solaris...
+
+-->This is Sun Solaris System.
+
+
+[*]Checking uptime of server ...
+
+--> uptime of server is 267 day(s)
+
+======================================================
+
+[*]Checking software versions ...
+
+--> OS version = solaris 9
+
+======================================================
+
+
+[*] Checking veritas sofware versions ...
+
+--> Veritas Volume Manager version is 4.1z
+
+--> Veritas Filesystem is not installed
+
+--> Veritas Cluster is not installed
+
+--> Veritas Netbackup version is NetBackup-Solaris9 6.5.5
+
+======================================================
+
+
+[*]Checking if any metadevice is reported in maintenance state ....
+
+-->No metadevice is reported in maintenance state from metastat output ...
+
+======================================================
+
+
+[*]Checking if any metadevice is syncing in background ...
+
+-->No metadevice is syncing in background ...
+
+======================================================
+
+
+[*]Checking if any diskgroup is in disabled state...
+
+--> No diskgroup found in disabled state
+
+======================================================
+
+
+[*]Checking if any volume is in disabled state...
+
+--> No volume found in disabled state
+
+======================================================
+
+
+[*]Checking for any disconnected SAN storage from Veritas volume Manager...
+
+--> Following SAN enclosure is found in Disconnected state from Veritas Volume Manager..
+EMC0              EMC            100147               DISCONNECTED -
+EMC01             EMC            102006               DISCONNECTED -
+======================================================
+
+
+[*]Checking for any disabled controllers from veritas volume manager...
+
+-->No controller is found in disabled state from Veritas Volume Manager.....
+
+======================================================
+
+
+[*]Checking if any disk is being reported as failed/failing in veritas volume manager ...
+
+-->None of disk is found in failed/failing state from veritas volume manager ...
+
+======================================================
+
+
+[*]Checking if any veritas sync tasks are running in the background ...
+
+-->No Veritas sync tasks found to be running in background ...
+
+======================================================
+
+
+[*]Checking if any filesystem is above 85% utilized....
+
+
+/..................... 95%
+
+
+/sadumps..................... 92%
+
+
+/ora..................... 100%
+
+
+/home..................... 94%
+
+
+/pps_explorers..................... 92%
+
+
+/export/jumpstart..................... 99%
+
+
+/export/software..................... 97%
+
+
+/ora/admin..................... 99%
+
+
+/sadumps/monthly_explorer..................... 100%
+
+
+/export/backups..................... 93%
+
+
+/export/ospatches..................... 97%
+
+
+/apps/archive..................... 97%
+
+
+/export/vmax..................... 95%
+
+
+/scexplo..................... 100%
+======================================================
+
+
+[*]Checking disks for hard & transport errors above threshold value....
+
+   Setting Hard error & Transport error threshold to 50
+
+
+--> Following disks have hard or transport errors greater than threshold value ...
+c0t0d0          Soft Errors: 0 Hard Errors: 0 Transport Errors: 244465
+c4t24d101       Soft Errors: 0 Hard Errors: 8799 Transport Errors: 0
+c4t24d102       Soft Errors: 0 Hard Errors: 5032 Transport Errors: 0
+c4t24d103       Soft Errors: 0 Hard Errors: 5533 Transport Errors: 0
+c4t24d104       Soft Errors: 0 Hard Errors: 6354 Transport Errors: 0
+c4t24d105       Soft Errors: 0 Hard Errors: 7017 Transport Errors: 0
+c4t24d106       Soft Errors: 0 Hard Errors: 12234 Transport Errors: 0
+c4t24d107       Soft Errors: 0 Hard Errors: 9133 Transport Errors: 0
+c4t24d108       Soft Errors: 0 Hard Errors: 8751 Transport Errors: 0
+c4t24d109       Soft Errors: 0 Hard Errors: 12484 Transport Errors: 0
+c4t24d110       Soft Errors: 0 Hard Errors: 10010 Transport Errors: 0
+c4t25d101       Soft Errors: 0 Hard Errors: 10269 Transport Errors: 0
+c4t25d102       Soft Errors: 0 Hard Errors: 6322 Transport Errors: 0
+c4t25d103       Soft Errors: 0 Hard Errors: 6771 Transport Errors: 0
+c4t25d104       Soft Errors: 0 Hard Errors: 7778 Transport Errors: 0
+c4t25d105       Soft Errors: 0 Hard Errors: 8219 Transport Errors: 0
+c4t25d106       Soft Errors: 0 Hard Errors: 13315 Transport Errors: 0
+c4t25d107       Soft Errors: 0 Hard Errors: 10603 Transport Errors: 0
+c4t25d108       Soft Errors: 0 Hard Errors: 9867 Transport Errors: 0
+c4t25d109       Soft Errors: 0 Hard Errors: 13632 Transport Errors: 0
+c4t25d110       Soft Errors: 0 Hard Errors: 11322 Transport Errors: 0
+c4t24d220       Soft Errors: 0 Hard Errors: 9941 Transport Errors: 0
+c4t24d221       Soft Errors: 0 Hard Errors: 8642 Transport Errors: 0
+c4t24d222       Soft Errors: 0 Hard Errors: 8844 Transport Errors: 0
+c4t24d223       Soft Errors: 0 Hard Errors: 8516 Transport Errors: 0
+c4t24d225       Soft Errors: 0 Hard Errors: 9459 Transport Errors: 0
+c4t24d226       Soft Errors: 0 Hard Errors: 8924 Transport Errors: 0
+c4t24d227       Soft Errors: 0 Hard Errors: 9066 Transport Errors: 0
+c4t25d220       Soft Errors: 0 Hard Errors: 11188 Transport Errors: 0
+c4t25d221       Soft Errors: 0 Hard Errors: 9832 Transport Errors: 0
+c4t25d222       Soft Errors: 0 Hard Errors: 9992 Transport Errors: 0
+c4t25d223       Soft Errors: 0 Hard Errors: 9922 Transport Errors: 0
+c4t25d224       Soft Errors: 0 Hard Errors: 1260 Transport Errors: 0
+c4t25d225       Soft Errors: 0 Hard Errors: 10791 Transport Errors: 0
+c4t25d226       Soft Errors: 0 Hard Errors: 10235 Transport Errors: 0
+c4t25d227       Soft Errors: 0 Hard Errors: 10183 Transport Errors: 0
+c4t24d233       Soft Errors: 0 Hard Errors: 4117 Transport Errors: 0
+c4t24d234       Soft Errors: 0 Hard Errors: 7466 Transport Errors: 0
+c4t24d235       Soft Errors: 0 Hard Errors: 7606 Transport Errors: 0
+c4t25d228       Soft Errors: 0 Hard Errors: 1273 Transport Errors: 0
+c4t25d229       Soft Errors: 0 Hard Errors: 1274 Transport Errors: 0
+c4t25d230       Soft Errors: 0 Hard Errors: 1261 Transport Errors: 0
+c4t25d231       Soft Errors: 0 Hard Errors: 1261 Transport Errors: 0
+c4t25d232       Soft Errors: 0 Hard Errors: 1261 Transport Errors: 0
+c4t25d233       Soft Errors: 0 Hard Errors: 5611 Transport Errors: 0
+c4t25d234       Soft Errors: 0 Hard Errors: 8957 Transport Errors: 0
+c4t25d235       Soft Errors: 0 Hard Errors: 8820 Transport Errors: 0
+======================================================
+
+
+[*]Checking if any defunct processes are existing on the server ...
+
+
+-->       10 Defunct processes found on the server, please check (ps -ef |grep -i defunct output) ...
+
+======================================================
+
+
+[*] Checking load average ....
+
+--> Load average of server is  0.33
+
+======================================================
+
+
+[*]Showing sar data for 3 instances to check current CPU utilization ...
+
+
+SunOS nus721 5.9 Generic_122300-68 sun4u    08/22/2016
+
+14:03:46    %usr    %sys    %wio   %idle
+14:03:49       3       2       2      94
+14:03:52       2       3       3      92
+14:03:55       2       2       0      95
+
+Average        2       3       2      94
+
+======================================================
+
+
+[*]Showing vmstat data for 3 instances to check read/write/block queues....
+
+ kthr      memory            page            disk          faults      cpu
+ r b w   swap  free  re  mf pi po fr de sr lf m0 m1 m4   in   sy   cs us sy id
+ 0 0 0 2570112 1513208 149 78 2368 21 21 0 1 0 0  0  0  183  251  239  6 11 83
+ 0 0 0 2749296 2279448 84 573 0 77 74 0  0  0  0  0  0  518 2442  577  1  4 95
+ 1 0 0 2746304 2279120 371 1821 3 58 56 0 0 0  0  0  0  495 9200  595  5  7 88
+
+======================================================
+
+
+[*]Showing top CPU consuming processes as per prstat output ...
+
+   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+  2604 root       14M 6888K sleep   54    0  58:55:54 0.6% scopeux/1
+    21 root       14M   11M sleep   60    0   7:41:32 0.5% vxconfigd/1
+  7183 oracle   4392K 3672K sleep   44    2   0:00:00 0.3% ssh/1
+  7110 d779587  8600K 6240K sleep   59    0   0:00:00 0.2% sshd/1
+  7196 root     5176K 4864K cpu1    19    0   0:00:00 0.2% prstat/1
+  7166 oracle   1144K  952K sleep   44    2   0:00:00 0.2% sh/1
+  7163 root       20M 5504K sleep   54    0   0:00:00 0.1% rscd_full/1
+  6752 d770332  4424K 3688K sleep   59    0   0:00:00 0.1% ssh/1
+  6768 root     2056K 1568K sleep    0    0   0:00:00 0.1% ServerHealthChe/1
+
+======================================================
+
+
+[*]Showing top memory consuming processes as per prstat output ...
+
+   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+  3620 root      153M   38M sleep   29   10  17:51:20 0.0% java/25
+  9276 root       81M   18M sleep   29   10   1:59:09 0.0% java/23
+ 27677 root      570M   14M sleep   59    0   0:00:29 0.0% java/22
+ 13609 oracle     42M   12M sleep   59    0  25:19:56 0.1% cmgw/1
+ 20783 root       13M   12M sleep   60    0   0:00:39 0.0% vxdclid/5
+    21 root       14M   11M sleep   60    0   7:41:32 0.5% vxconfigd/1
+   667 root       71M 9856K sleep   59    0   0:08:14 0.0% vxsvc/23
+ 11578 instat     20M 8176K sleep   53    2   2:58:41 0.0% ksh/1
+  2648 root       28M 7160K sleep   59    0   0:00:49 0.0% ovcd/25
+
+======================================================
+
+
+[*]Checking if any network interface is reported in failed state ...
+
+
+--> Following network interface are reported in failed state from ifconfig output...
+bge1
+ce1
+
+======================================================
+Workspace for this script is /tmp/temp6768/quickservchk.sh.log
+
+Script ended ...
+======================================================
+nus721 $

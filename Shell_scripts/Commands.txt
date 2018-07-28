@@ -1,0 +1,38 @@
+#### CORES AND PROCS ###
+
+cat /proc/cpuinfo | grep -i processor | wc -l
+cat /proc/cpuinfo | grep "cpu cores" | awk -F ":" '{total += $2}END {print total}'
+
+###### Processr Type
+
+cat /proc/cpuinfo | grep 'model name' | uniq | awk -F ":" '{print $2}' | sed -e 's/ //g'
+
+##### Memory usage
+free -m | grep Mem | awk '{print $2}'
+free -m | grep Mem | awk '{print $3}'
+free -m | grep -i swap  | awk '{print $2}'
+free -m | grep -i swap  | awk '{print $3}'
+
+####### CPU Usage
+sar -u 1 5 | grep Average | awk '{print $7}'
+####### Load Average
+uptime | awk -F "load average:" '{print $2}' | sed -e 's/ //g'
+
+###### VGS
+
+lvs | grep -v LSize| awk '{print "/dev/"$2"/"$1}'
+#!/bin/sh
+for i in `lvs | grep -v LSize| awk '{print "/dev/"$2"/"$1}'`
+		do
+			if [ $(lvdisplay $i | grep "LV Status" | awk -F "LV Status" '{print $1}' | grep "NOT available" -c) -ne 0 ]; then
+			LV_STATUS="$LV_STATUS,`echo $i | $AWK '{ print $1 }'`"
+			fi
+			done
+		IFS=$CUR_IFS		
+		if [ -z "$LV_STATUS" ]; then
+		LV_STATUS="All logical drive(s) fine"
+		else
+		LV_STATUS="Following logical drive(s) failed: $echo LV_STATUS"
+		fi
+		echo "$LV_STATUS"
+			

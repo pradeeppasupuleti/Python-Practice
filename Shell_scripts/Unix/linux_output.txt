@@ -1,0 +1,98 @@
+***************************Server's health check has started (08/26/2016 12:06)*********************************
+HW details:
+-----------
+         Hostname               :  lxapp0424
+         Vendor                 :  IBM
+         Product                :  IBM eServer BladeCenter HS21 -[8853L4M]-
+         Serial No              :  99T3169
+         Bios Version           :  -[BCE121AUS-1.06]-
+         Processor Type         :  Intel(R) Xeon(R) CPU            5140  @ 2.33GHz
+         No of Processor        :  4
+         Total cores            :  8
+
+
+Memory and CPU Utilization:
+---------------------------
+         Total  Memory          : 4951 M
+         Used Memory            : 1266 M
+         SWAP Memory            : 1027 M
+         Used Swaap Memory      : 195 M
+         CPU Utilization  %     : .76
+         Load average 1,5,15    : 0.00,0.00,0.00
+
+
+OS details:
+-----------
+         OS Version             : SUSE LINUX Enterprise Server 9 (x86_64) VERSION = 9 PATCHLEVEL = 4
+         Uptime                 : 457 day(s)
+         Kernel Version         : 2.6.5-7.325-smp
+
+
+Processes details:
+------------------
+         Defunct List           : No defunct processes
+
+
+USM:
+----
+         Agent Status           : Few agents are running in USM
+
+
+Backup:
+-------
+         Status                 : No backup
+
+
+Filesystems:
+------------
+         Space status           : /home 97%; /var 89%
+         Inode status           : All Filesystems are fine
+
+
+Disks:
+------
+         No of Disks            : 1
+         Raid level(s)          : Tool not found
+         Physical drive(s)      : Tool not found
+         Logical drive(s)       : Tool not found
+         Battery                : Tool not found
+
+
+LVM Detials:
+------------
+         No Of VG(s)            : 1
+         No Of LVM(s)           : 5
+         Lvm Status             : All logical drive(s) fine
+
+
+Network:
+--------
+         Status                 : No link found for  eth2 and ( eth2) are not configured with Full duplex
+
+
+Vertias Cluster Check
+---------------------
+         Cluster Status         : Host is not in cluster
+
+
+Veritas Volume Manger
+---------------------
+         Vertias Volume Status  : Host not configure with Vertias Volume.
+
+
+Interface Details:
+------------------
+        +-------------+---------------+--------+-------------------+-----------------+-----------------+-----------+---------------------+
+        |  Interface  |  P-Interface  | Status |  Mac-ID           |  Speed          | Duplex          |  Auto-Neg |     IP Address      |
+        +-------------+---------------+--------+-------------------+-----------------+-----------------+-----------+---------------------+
+        | bond0       | eth0          | yes    | 00:1a:64:89:d5:cc | 1000Mb/s        | Full            | on        | 146.132.40.252      |
+        | bond0       | eth2          | no     | 00:14:5e:a8:16:d0 | Unknown!(65535) | Unknown!(255)   | on        | 146.132.40.252      |
+        +-------------+---------------+--------+-------------------+-----------------+-----------------+-----------+---------------------+
+
+
+Other Errors:
+-------------
+                        Errors found. Please refer lxapp0424-messages-errors.log
+                        No errors found
+
+**************************Server's health check has completed (08/26/2016 12:06)********************************

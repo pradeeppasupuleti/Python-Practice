@@ -1,0 +1,13 @@
+2017-05-24 17:35:15,935 - root - INFO - Execution format -> # python parse_xlsx.py <xlsx / xls file>
+2017-05-24 17:35:15,935 - root - INFO - Exiting the script input file format is not xlsx
+2017-05-24 17:36:15,145 - root - INFO - Processing  started with the given input file---->'cloud.xlsx'
+2017-05-24 17:36:15,152 - root - INFO - List of input sheets - [u'DOC HISTORY', u'S&P - AM3-030701', u'AM3-Rack Elevation', u'AM3-Structured Cable Mapping', u'C4R101-104 - NW Core', u'c5r107-108 Agg for Dedicated', u'c5r207-Compute (Guest1) -Zone1', u'c5r208-ZFS - Zone1 ', u'c5r209-Compute (Guest1) - Zone2', u'c5r210-ZFS - Zone2 ', u'C5R305 -Compute (Guest1) -Zone4', u'c5r306-ZFS - Zone4 ', u'C5R307 -Compute (Guest2) -Zone4', u'c5r308-ZFS - Zone4 ', u'C5R309 -Compute (Admin) - Z3-4', u'c5r310-ZFS - Zone3 ', u'C5R311 -Compute (Guest1) -Zone3', u'C5R312 -Compute (Admin) - Z1-2', u'c5r501 -502  BDCS AGG', u'c5r503 BDCS ZFS', u'c5r504 BDA', u'c5r505 BDA', u'c5r506 BDA', u'c5r507 BDA', u'c5r508 BDA', u'C5R509 BDA Exdata', u'c5r411 PaaS Agg', u'c5r510 IaaS Compute', u'c5r511 IaaS Compute', u'c5r601 PaaS Compute', u'c5r602 PaaS ZFS', u'c5r603 PaaS ZFS', u'c5r604 PaaS Compute', u'c5r605 PaaS ZFS', u'c5r606 PaaS ZFS', u'c5r607 PaaS Compute', u'c5r608 PaaS ZFS', u'c5r609 PaaS ZFS', u'c5r610 PaaS ZFS', u'c5r611 PaaS ZFS']
+2017-05-24 17:36:15,158 - root - INFO - Number of sheets found in the file:40
+2017-05-24 17:36:15,158 - root - INFO - Processing BDA sheet - c5r504 BDA
+2017-05-24 17:36:15,162 - root - INFO - Processing BDA sheet - c5r505 BDA
+2017-05-24 17:36:15,165 - root - INFO - Processing BDA sheet - c5r506 BDA
+2017-05-24 17:36:15,168 - root - INFO - Processing BDA sheet - c5r507 BDA
+2017-05-24 17:36:15,170 - root - INFO - Processing BDA sheet - c5r508 BDA
+2017-05-24 17:36:15,174 - root - INFO - Processing exdata sheet - C5R509 BDA Exdata
+2017-05-24 17:36:15,178 - root - INFO - Generating output xlsx ...
+2017-05-24 17:36:15,187 - root - INFO - Fire wall sheet Generated Successfully...
